@@ -18,6 +18,15 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 1px rgb(54, 54, 54);
 }
+#welcome {
+    float: left;
+    padding-top: 7px;
+    margin-top: 5px;
+    margin-right: 20px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);
+}
 #header-div {
     padding-top: 10px;
     margin-left: 10%;
