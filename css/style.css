@@ -1,43 +1,106 @@
+html {
+    min-width: fit-content;
+    min-height: fit-content;
+}
 header {
-    background-color: #85afae;
-    border-radius: 25px;
-    height: 100px;
+    background-color: #2F6363;
+    height: 50px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
 }
 h1 {
     float: left;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 20px;
-    color: rgb(14, 14, 14);
+    color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 1px rgb(54, 54, 54);
 }
 #header-div {
-    padding-top: 32px;
+    padding-top: 10px;
     margin-left: 10%;
 }
 #links {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
     overflow: hidden;
 }
 #links li {
     display: inline;
     float: left;
 }
-
-
 #links li a {
     display: block;
     text-decoration: none;
-    color: rgb(14, 14, 14);
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
     padding: 5px;
     font-family: 'Times New Roman', Times, serif;
-
 }
 #links li a:hover {
     text-decoration: underline;
+}
+body {
+    background-color: #C0FCFB;
+}
+
+#main-div {
+    text-align: center;
+    padding-top: 25px;
+    display: block;
+    margin: auto;
+    width: 1024px;
+    border-radius: 2px;
+    outline: solid #2F6363 10px ;
+    outline-offset: 10px;
+    
+}
+h2 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px rgb(54, 54, 54);  
+}
+#exp-heading, #edu-heading, #lf-goal-header {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(14, 14, 14);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+#bio {
+    display: inline-block;
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.bio, .exp, .edu {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#exp-list-p, #bio-list-p, #edu-list-p, #lf-goal-p {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+footer {
+    background-color: #2F6363;
+    height: 50px;
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+#footer {
+    padding-top: 3px;
+    padding-left: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    color: white;
 }
