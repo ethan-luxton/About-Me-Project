@@ -20,9 +20,9 @@ function questionnaire() {
 }
 questionnaire();
 
-function displayUserName() {
-    document.write('Hello ' + userName + '!');
-}
+// function displayUserName() {
+//     document.write('Hello ' + userName + '!'); will use this function at a later date
+// }
 
 
 /* Some of the JS in here was used from W3Schools example, but it was edited to fit my naming conventions and preferences https://www.w3schools.com/howto/howto_js_slideshow.asp */

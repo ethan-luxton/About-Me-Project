@@ -57,12 +57,22 @@ body {
 }
 main {
     padding-bottom: 70px;
+    
+}
+#fun-facts {
+    border-radius: 10px;
+    background-color: rgb(163, 221, 255);
+    width: 730px;
+    margin-top: 5rem;
+    position: sticky;
+    display: block;
+    margin-left: 40%;
 }
 #photography {
     border-radius: 10px;
     background-color: rgb(163, 221, 255);
     width: 730px;
-    margin-top: 5rem;
+    margin-top: 20px;
     position: sticky;
     display: block;
     margin-left: 60%;
@@ -97,9 +107,19 @@ main {
     margin-top: 20px;
     margin-left: 60%;
 }
-#exp-div, #edu-div, #proj-div {
+#more-fun-facts {
+    border-radius: 10px;
+    background-color: rgb(163, 221, 255);
+    width: 730px;
+    position: sticky;
+    display: block;
+    margin-top: 20px;
+    margin-left: 40%; 
+}
+#exp-div, #edu-div, #proj-div,  #bio-div, #travel-div, #food-div, #show-div {
     padding-top: 3px;
     padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 3px;
 }
 h2 {
@@ -109,13 +129,13 @@ h2 {
 }
 .heading {
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(14, 14, 14);
+    color: #ffffff;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
 }
-.exp, .edu {
-    
+.exp, .edu, .proj, .bio, .food, .travel, .show {
+    padding: 2px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
