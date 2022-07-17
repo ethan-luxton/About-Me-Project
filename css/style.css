@@ -1,8 +1,9 @@
 html {
-    min-width: fit-content;
-    min-height: fit-content;
+    height:1080px;
+    width:1920px;
 }
 header {
+    z-index: 1;
     background-color: #2F6363;
     height: 50px;
     position: fixed;
@@ -18,18 +19,9 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 1px rgb(54, 54, 54);
 }
-#welcome {
-    float: left;
-    padding-top: 7px;
-    margin-top: 5px;
-    margin-right: 20px;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 1px 1px 1px rgb(54, 54, 54);
-}
 #header-div {
     padding-top: 10px;
-    margin-left: 10%;
+
 }
 #links {
     list-style: none;
@@ -54,45 +46,82 @@ h1 {
 #links li a:hover {
     text-decoration: underline;
 }
+#pointer {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
 body {
+    max-width: 1920px;
     background-color: #C0FCFB;
 }
-
-#main-div {
-    text-align: center;
-    padding-top: 25px;
+main {
+    padding-bottom: 70px;
+}
+#photography {
+    border-radius: 10px;
+    background-color: rgb(163, 221, 255);
+    width: 730px;
+    margin-top: 5rem;
+    position: sticky;
     display: block;
-    margin: auto;
-    width: 1024px;
-    border-radius: 2px;
-    outline: solid #2F6363 10px ;
-    outline-offset: 10px;
+    margin-left: 60%;
+}
+#projects {
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(163, 221, 255);
+    width: 730px;
+    position: sticky;
+    display: block;
     
+}
+#proj-list-p a {
+    color: #000000;
+    text-decoration: none;
+    text-shadow: .5px 1px 1px rgb(54, 54, 54);
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#proj-list-p a:hover {
+    text-decoration: underline;
+}
+#bio-info {
+    border-radius: 10px;
+    background-color: rgb(163, 221, 255);
+    width: 730px;
+    position: sticky;
+    display: block;
+    margin-top: 20px;
+    margin-left: 60%;
+}
+#exp-div, #edu-div, #proj-div {
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-bottom: 3px;
 }
 h2 {
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 1px 1px 1px rgb(54, 54, 54);  
+    text-shadow: 1px .5px 2px rgb(54, 54, 54);  
 }
-#exp-heading, #edu-heading, #lf-goal-header {
+.heading {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(14, 14, 14);
     margin-top: 15px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
 }
-#bio {
-    display: inline-block;
-    width: 600px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-}
-.bio, .exp, .edu {
+.exp, .edu {
+    
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
-#exp-list-p, #bio-list-p, #edu-list-p, #lf-goal-p {
+.text {
+    font-size: 15px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -108,6 +137,8 @@ footer {
 #footer {
     padding-top: 3px;
     padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14;

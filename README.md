@@ -5,6 +5,10 @@ An 'About Me' webpage project for CodeFellow's Code 201 course.
 
 This project utilizes HTML, JS, and CSS to create an 'About Me' page; which is interactive.
 
+## Update log:
+* Ver. 1.0: Initial webpage upload to GitHub.
+* Ver. 1.01: Added font awesome kit, updated styling, added form section to index.html along with a cleaner-looking page, updated app.js to provide more functionality. 
+
 
 ## Installation
 

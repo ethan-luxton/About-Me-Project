@@ -23,3 +23,31 @@ questionnaire();
 function displayUserName() {
     document.write('Hello ' + userName + '!');
 }
+
+
+/* Some of the JS in here was used from W3Schools example, but it was edited to fit my naming conventions and preferences https://www.w3schools.com/howto/howto_js_slideshow.asp */
+let imgIn = 1;
+
+
+// Image switch control
+function switchImg(n) {
+    showImg(imgIn += n);
+}
+function currentImg(n) {
+    showImg(imgIn = n);
+}
+function showImg(n) {
+    let i;
+    let imgSelected = document.getElementsByClassName("slide-div");
+    if (n > imgSelected.length) {
+        imgIn = 1;
+    }
+    if (n < 1) {
+        imgIn = imgSelected.length;
+    }
+    for (i = 0; i < imgSelected.length; i++) {
+        imgSelected[i].style.display = "none"; //JS for no styling in CSS
+    }
+    imgSelected[imgIn-1].style.display = "block"; //JS for tapping into CSS block property
+    
+}
