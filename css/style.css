@@ -21,7 +21,6 @@ h1 {
 }
 #header-div {
     padding-top: 10px;
-
 }
 #links {
     list-style: none;
@@ -57,7 +56,6 @@ body {
 }
 main {
     padding-bottom: 70px;
-    
 }
 #fun-facts {
     border-radius: 10px;
@@ -66,7 +64,7 @@ main {
     margin-top: 5rem;
     position: sticky;
     display: block;
-    margin-left: 40%;
+    margin-left: 15%;
 }
 #photography {
     border-radius: 10px;
@@ -75,17 +73,16 @@ main {
     margin-top: 20px;
     position: sticky;
     display: block;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 #projects {
-    margin-left: 40%;
+    margin-left: 15%;
     margin-top: 20px;
     border-radius: 10px;
     background-color: rgb(163, 221, 255);
     width: 730px;
     position: sticky;
     display: block;
-    
 }
 #proj-list-p a {
     color: #000000;
@@ -105,7 +102,7 @@ main {
     position: sticky;
     display: block;
     margin-top: 20px;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 #more-fun-facts {
     border-radius: 10px;
@@ -114,7 +111,7 @@ main {
     position: sticky;
     display: block;
     margin-top: 20px;
-    margin-left: 40%; 
+    margin-left: 15%; 
 }
 #exp-div, #edu-div, #proj-div,  #bio-div, #travel-div, #food-div, #show-div {
     padding-top: 3px;
