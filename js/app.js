@@ -20,7 +20,7 @@ if (answArray[0, 2, 4] == y && answArray[1, 3] == n) {
 let i = 5;
 let correctNum = 8;
 const warmCold = ['Colder', 'Warmer'];
-let correctShow = 'stranger things';
+const correctShow = ['stranger things', 'altered carbon', 'the boys'];
 while (i > 0) {
     let q7 = prompt('Guess a number between 1-25.');
     i--;
@@ -35,9 +35,9 @@ while (i > 0) {
     }
     let q8 = prompt('What do you think my favorite show is?');
     i--;
-    if (q8 != correctShow) {
+    if (q8 != correctShow[0, 1, 2]) {
         alert('That\'s not correct! Try again! ' + i + ' tries left!'); 
-    } else if (q8 == correctShow) {
+    } else if (q8 === correctShow[0] || q8 === correctShow[1] || q8 === correctShow[2]) {
         alert('That\'s correct!');
         if (answArray[0, 2, 4] == y && answArray[1, 3] == n && q7 == correctNum && q8 == correctShow) {
             alert("Congrats! You got all the questions right!")
