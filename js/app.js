@@ -17,42 +17,52 @@ if (answArray[0, 2, 4] == y && answArray[1, 3] == n) {
 } else {
     alert('That\'s not correct :( read my about me page!');
 }
-let i = 5;
-let correctNum = 8;
-const warmCold = ['Colder', 'Warmer'];
-const correctShow = ['stranger things', 'altered carbon', 'the boys'];
-while (i > 0) {
-    let q7 = prompt('Guess a number between 1-25.');
-    i--;
-    if (q7 != correctNum) {
-        if (q7 < 6 || q7 > 10) {
-            alert('That\'s not correct! Try again! ' + i + ' tries left! You are: ' + warmCold[0]);
-        } else if (q7 == 6 || q7 == 7 || q7 == 8 || q7 == 9) {
-            alert('That\'s not correct! Try again! ' + i + ' tries left! You are: ' + warmCold[1]); 
-        }
-    } else {
-        alert('That\'s correct!')
+
+function guessingGames() {
+    // Random number guessing game
+    let correctNum = Math.floor(Math.random()* 26) + 1;
+    console.log(correctNum);
+    for (let i = 4; i > 0; i--) {
+        //console.log(i);
+        let q7 = prompt('Guess a number between 1-25. You have 4 attempts:');
+        const tooHighLow = ['too high!', 'too low!'];
+        if (q7 < correctNum && q7 != correctNum) {
+            alert('That\'s not correct! Try again! ' + i + ' tries left! You are ' + tooHighLow[1]);
+        } else if (q7 > correctNum && q7 != correctNum) {
+            alert('That\'s not correct! Try again! ' + i + ' tries left! You are ' + tooHighLow[0]);
+        } else if (q7 = correctNum) {
+            alert('That is correct!');
+            answArray.push(q7);
+            //console.log(answArray);
+            break;
+        } 
     }
-    let q8 = prompt('What do you think my favorite show is?');
-    i--;
-    if (q8 != correctShow[0, 1, 2]) {
-        alert('That\'s not correct! Try again! ' + i + ' tries left!'); 
-    } else if (q8 === correctShow[0] || q8 === correctShow[1] || q8 === correctShow[2]) {
-        alert('That\'s correct!');
-        if (answArray[0, 2, 4] == y && answArray[1, 3] == n && q7 == correctNum && q8 == correctShow) {
-            alert("Congrats! You got all the questions right!")
-        }
-        break;
+    if (answArray[5] != correctNum) {
+        alert('The correct number was: ' + correctNum);
     }
+    // Favorite show guessing game
+    const correctShow = ['stranger things', 'altered carbon', 'the boys'];
+    for(let i = 6; i > 0; i--) {
+        let q8 = prompt('Can you guess one of my favorite shows? You have 6 attempts').toLowerCase();
+        if (q8 == correctShow[0] || q8 == correctShow[1] || q8 == correctShow[2]) {
+            alert("That is correct!");
+            answArray.push(q8);
+            //console.log(answArray);
+            // Alert if user gets all questions right!
+            if (answArray[0, 2, 4] == y && answArray[1, 3] == n && answArray[5] && answArray[6]) {
+                alert('Congrats! You got all the questions right!');
+                alert('My favorite shows were: ' + correctShow)
+            }
+            break;  
+        } else {
+            alert('That\'s not correct! Try again! ' + i + ' tries left!');
+        }
+    }
+    
 }
+guessingGames();
 
-
-
-// function displayUserName() {
-//     document.write('Hello ' + userName + '!'); will use this function at a later date
-// }
-
-// Some of the JS below was used from a W3Schools example, but it was edited to fit my naming conventions and preferences https://www.w3schools.com/howto/howto_js_slideshow.asp
+// // Some of the JS below was used from a W3Schools example, but it was edited to fit my naming conventions and preferences https://www.w3schools.com/howto/howto_js_slideshow.asp
 let imgIn = 1;
 // Image switch control
 function switchImg(n) {
