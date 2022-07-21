@@ -1,6 +1,9 @@
 # About-Me-Project
 An 'About Me' webpage project for CodeFellow's Code 201 course.
 
+### Driver: Ethan Luxton
+### Navigator: Danner Taylor
+
 ## Synopsis
 
 This project utilizes HTML, JS, and CSS to create an 'About Me' page; which is interactive.
